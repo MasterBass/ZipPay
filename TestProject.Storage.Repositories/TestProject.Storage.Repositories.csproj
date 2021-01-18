@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netcoreapp3.0</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Folder Include="Implementation" />
+      <Folder Include="Interfaces" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\TestProject.Common\TestProject.Common.csproj" />
+      <ProjectReference Include="..\TestProject.Storage.Core\TestProject.Storage.Core.csproj" />
+      <ProjectReference Include="..\TestProject.Storage.DAL\TestProject.Storage.DAL.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.0.0" />
+    </ItemGroup>
+
+</Project>
