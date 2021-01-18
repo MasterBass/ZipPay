@@ -3,10 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29609.76
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestProject.WebAPI", "TestProject.WebAPI\TestProject.WebAPI.csproj", "{0652E430-24A1-429D-B9C8-FC5E308D77FB}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestProject.Tests", "TestProject.Tests\TestProject.Tests.csproj", "{07F900FC-80A1-4FFA-A652-2A070B4E337D}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{B2B67825-B2DE-46A0-B4A4-4F2D6446A60B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestProject.Core.Domain", "TestProject.Core.Domain\TestProject.Core.Domain.csproj", "{F77EC430-1ADC-45A1-B1DE-33A5BD75E1C1}"
@@ -29,14 +25,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{0652E430-24A1-429D-B9C8-FC5E308D77FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0652E430-24A1-429D-B9C8-FC5E308D77FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0652E430-24A1-429D-B9C8-FC5E308D77FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0652E430-24A1-429D-B9C8-FC5E308D77FB}.Release|Any CPU.Build.0 = Release|Any CPU
-		{07F900FC-80A1-4FFA-A652-2A070B4E337D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{07F900FC-80A1-4FFA-A652-2A070B4E337D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{07F900FC-80A1-4FFA-A652-2A070B4E337D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{07F900FC-80A1-4FFA-A652-2A070B4E337D}.Release|Any CPU.Build.0 = Release|Any CPU
 		{F77EC430-1ADC-45A1-B1DE-33A5BD75E1C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{F77EC430-1ADC-45A1-B1DE-33A5BD75E1C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F77EC430-1ADC-45A1-B1DE-33A5BD75E1C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
