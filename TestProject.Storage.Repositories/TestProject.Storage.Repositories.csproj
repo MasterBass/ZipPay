@@ -5,11 +5,6 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <Folder Include="Implementation" />
-      <Folder Include="Interfaces" />
-    </ItemGroup>
-
-    <ItemGroup>
       <ProjectReference Include="..\TestProject.Common\TestProject.Common.csproj" />
       <ProjectReference Include="..\TestProject.Storage.Core\TestProject.Storage.Core.csproj" />
       <ProjectReference Include="..\TestProject.Storage.DAL\TestProject.Storage.DAL.csproj" />
