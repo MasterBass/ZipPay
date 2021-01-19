@@ -33,6 +33,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestProject.Test.Unit", "Te
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestProject.Storage.Migrations", "TestProject.Storage.Migrations\TestProject.Storage.Migrations.csproj", "{C639571B-C981-4C5C-A0CB-D200D91A4D6E}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebApi", "WebApi", "{20D01436-8294-4317-B189-A72B1673F64A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestProject.API", "TestProject.API\TestProject.API.csproj", "{87CF62F9-E9E0-423A-AB4C-775A21B9008A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -79,6 +83,10 @@ Global
 		{C639571B-C981-4C5C-A0CB-D200D91A4D6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C639571B-C981-4C5C-A0CB-D200D91A4D6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C639571B-C981-4C5C-A0CB-D200D91A4D6E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{87CF62F9-E9E0-423A-AB4C-775A21B9008A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87CF62F9-E9E0-423A-AB4C-775A21B9008A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87CF62F9-E9E0-423A-AB4C-775A21B9008A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87CF62F9-E9E0-423A-AB4C-775A21B9008A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -97,5 +105,6 @@ Global
 		{3F4696CD-6033-4DDE-95F3-7923C1B9465C} = {56A8193B-1871-4F04-A3A6-4967684BC66D}
 		{46E58B38-540D-4677-B682-396DA447E784} = {56A8193B-1871-4F04-A3A6-4967684BC66D}
 		{C639571B-C981-4C5C-A0CB-D200D91A4D6E} = {EA8742D8-356C-4E05-89D1-F043B63E6714}
+		{87CF62F9-E9E0-423A-AB4C-775A21B9008A} = {20D01436-8294-4317-B189-A72B1673F64A}
 	EndGlobalSection
 EndGlobal
