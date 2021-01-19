@@ -5,11 +5,6 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <Folder Include="Controllers" />
-        <Folder Include="Models" />
-    </ItemGroup>
-
-    <ItemGroup>
         <ProjectReference Include="..\TestProject.Common\TestProject.Common.csproj" />
         <ProjectReference Include="..\TestProject.Storage.DAL\TestProject.Storage.DAL.csproj" />
     </ItemGroup>
