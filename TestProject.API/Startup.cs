@@ -6,6 +6,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using TestProject.API.Middlewares;
 using TestProject.API.StartupDependencyInjection;
 using TestProject.Storage.DAL;
 
@@ -71,6 +72,8 @@ namespace TestProject.API
             }
 
             app.UseRouting();
+            
+            app.UseMiddleware(typeof(ErrorHandlingMiddleware));
 
             app.UseEndpoints(endpoints =>
             {
