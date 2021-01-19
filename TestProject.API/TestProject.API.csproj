@@ -4,4 +4,26 @@
         <TargetFramework>netcoreapp3.1</TargetFramework>
     </PropertyGroup>
 
+    <ItemGroup>
+        <Folder Include="Controllers" />
+        <Folder Include="Filters" />
+        <Folder Include="Middlewares" />
+        <Folder Include="Models" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\TestProject.Common\TestProject.Common.csproj" />
+        <ProjectReference Include="..\TestProject.Storage.DAL\TestProject.Storage.DAL.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="AutoMapper" Version="10.0.0" />
+        <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.0.1" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.1.8" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="3.1.6" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.8" />
+        <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="3.1.8" />
+        <PackageReference Include="Scrutor" Version="3.2.2" />
+    </ItemGroup>
+
 </Project>
