@@ -9,7 +9,7 @@ namespace TestProject.Storage.Repositories.Implementation
     [ExposeForDI]
     public class UserRepository : GenericRepository<AppDbContext, User, long>, IUserRepository
     {
-        protected UserRepository(AppDbContext context) : base(context)
+        public UserRepository(AppDbContext context) : base(context)
         {
         }
     }

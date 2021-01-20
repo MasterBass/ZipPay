@@ -9,7 +9,7 @@ namespace TestProject.Storage.Repositories.Implementation
     [ExposeForDI]
     public class AccountRepository : GenericRepository<AppDbContext, Account, long>, IAccountRepository
     {
-        protected AccountRepository(AppDbContext context) : base(context)
+        public AccountRepository(AppDbContext context) : base(context)
         {
         }
     }

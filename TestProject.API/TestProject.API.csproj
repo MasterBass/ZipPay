@@ -6,8 +6,11 @@
 
     <ItemGroup>
         <ProjectReference Include="..\TestProject.Common\TestProject.Common.csproj" />
+        <ProjectReference Include="..\TestProject.Core.Services\TestProject.Core.Services.csproj" />
+        <ProjectReference Include="..\TestProject.Infrastructure.Services\TestProject.Infrastructure.Services.csproj" />
         <ProjectReference Include="..\TestProject.Storage.DAL\TestProject.Storage.DAL.csproj" />
         <ProjectReference Include="..\TestProject.Storage.Migrations\TestProject.Storage.Migrations.csproj" />
+        <ProjectReference Include="..\TestProject.Storage.Repositories\TestProject.Storage.Repositories.csproj" />
     </ItemGroup>
 
     <ItemGroup>
