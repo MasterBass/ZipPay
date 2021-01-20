@@ -35,18 +35,18 @@ namespace TestProject.API
             services.ConfigureDependencyInjection(Configuration);
             
 
-            if (CurrentEnvironment.IsDevelopment())
-            {
-                services.AddDbContext<AppDbContext>(options => options.UseInMemoryDatabase("TestProject"));
-            }
-            else
-            {
+             if (CurrentEnvironment.IsDevelopment())
+             {
+                 services.AddDbContext<AppDbContext>(options => options.UseInMemoryDatabase("TestProject"));
+             }
+             else
+             {
                 var connString = Configuration.GetConnectionString("DefaultConnection");
                 services.AddDbContext<AppDbContext>(options =>
                 {
                     options.UseSqlServer(connString, opt => opt.MigrationsAssembly("TestProject.Storage.Migrations"));
                 });
-            }
+             }
             
             services.AddAutoMapper(typeof(Startup));
         }

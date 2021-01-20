@@ -8,4 +8,12 @@
       <Folder Include="Migrations" />
     </ItemGroup>
 
+    <ItemGroup>
+      <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.8" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\TestProject.Storage.DAL\TestProject.Storage.DAL.csproj" />
+    </ItemGroup>
+
 </Project>

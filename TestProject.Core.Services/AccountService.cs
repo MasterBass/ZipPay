@@ -1,4 +1,5 @@
 using System.Threading.Tasks;
+using TestProject.Common.Attribute;
 using TestProject.Common.Exception;
 using TestProject.Common.Filtering;
 using TestProject.Core.Domain;
@@ -9,6 +10,7 @@ using TestProject.Storage.Repositories.Interfaces;
 
 namespace TestProject.Core.Services
 {
+    [ExposeForDI]
     public class AccountService : IAccountService
     {
         #region Fields

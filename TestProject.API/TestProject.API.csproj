@@ -7,6 +7,7 @@
     <ItemGroup>
         <ProjectReference Include="..\TestProject.Common\TestProject.Common.csproj" />
         <ProjectReference Include="..\TestProject.Storage.DAL\TestProject.Storage.DAL.csproj" />
+        <ProjectReference Include="..\TestProject.Storage.Migrations\TestProject.Storage.Migrations.csproj" />
     </ItemGroup>
 
     <ItemGroup>

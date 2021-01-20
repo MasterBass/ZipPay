@@ -1,10 +1,12 @@
 using System;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
+using TestProject.Common.Attribute;
 using TestProject.Storage.DAL;
 
 namespace TestProject.Storage.Repositories.Core
 {
+    [ExposeForDI]
     public class UnitOfWork : IUnitOfWork
     {
         #region Fields
