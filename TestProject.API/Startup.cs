@@ -41,7 +41,10 @@ namespace TestProject.API
              }
              else
              {
-                var connString = Configuration.GetConnectionString("DefaultConnection");
+                var connString = CurrentEnvironment.EnvironmentName == "docker" ? 
+                    "Server=db;Database=master;User=sa;Password=.=xg2]V5;" :
+                    Configuration.GetConnectionString("DefaultConnection");
+                
                 services.AddDbContext<AppDbContext>(options =>
                 {
                     options.UseSqlServer(connString, opt => opt.MigrationsAssembly("TestProject.Storage.Migrations"));

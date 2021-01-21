@@ -12,8 +12,8 @@ namespace TestProject.API.StartupDependencyInjection
 
             services.Scan(scan => scan.FromExecutingAssembly()
                 .FromApplicationDependencies(a => a.FullName.Contains("TestProject.Storage.Repositories")
-                                                  || a.FullName.Contains("TestProject.Infrastructure")
-                                                  || a.FullName.Contains("TestProject.Core"))
+                                                  || a.FullName.Contains("TestProject.Infrastructure.Services")
+                                                  || a.FullName.Contains("TestProject.Core.Services"))
                 .AddClasses(filter => filter.WithAttribute<ExposeForDIAttribute>())
                 .AsImplementedInterfaces()
                 .WithScopedLifetime()
