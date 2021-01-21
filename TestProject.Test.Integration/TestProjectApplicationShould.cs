@@ -1,3 +1,4 @@
+using System.Net;
 using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
@@ -22,8 +23,13 @@ namespace TestProject.Test.Integration
             var response = await _fixture.Client.GetAsync("api/user");
             response.EnsureSuccessStatusCode();
             var responseString = await response.Content.ReadAsStringAsync();
-
-            Assert.Contains("{\"result\":[],\"totalCount\":0,\"pagingInfo\":{\"pageSize\":10,\"pageNumber\":0,\"sortDir\":null,\"sortKey\":null}}", responseString);
+            
+            Assert.Contains("result", responseString);
+            Assert.Contains("totalCount", responseString);
+            Assert.Contains("pagingInfo", responseString);
+            Assert.Contains("pageSize", responseString);
+            Assert.Contains("pageNumber", responseString);
+            
         }
         
           
@@ -47,6 +53,28 @@ namespace TestProject.Test.Integration
 
 
         }
+
+        [Fact]
+        public async Task PostUserFailEmailIsRequired()
+        {
+            
+            HttpRequestMessage postRequest = 
+                new HttpRequestMessage(HttpMethod.Post, "api/user");
+
+            var obj = new { MonthlySalary = 1211.50, MonthlyExpenses = 25};
         
+            var json = JsonConvert.SerializeObject(obj);
+            
+            postRequest.Content = new StringContent(json, Encoding.UTF8, "application/json");
+
+            var response = await _fixture.Client.SendAsync(postRequest);
+            var responseString = await response.Content.ReadAsStringAsync();
+            Assert.Equal(HttpStatusCode.BadRequest, response.StatusCode);
+
+            Assert.Contains("{\"error\":\"Argument Exception: The Email field is required.\"}", responseString);
+
+
+        }
     }
+    
 }
